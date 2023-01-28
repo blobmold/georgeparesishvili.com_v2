@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-ubuntu;
+    }
+    h1 {
+        @apply text-5xl font-bold;
+    }
+    h2 {
+        @apply text-[40px] font-bold inline-block;
+    }
+    h3 {
+        @apply text-3xl font-medium;
+    }
+    h2 > a {
+        @apply flex items-center;
+    }
+    h2 > a::after {
+        font-family: "Material Symbols Outlined";
+        content: "anchor";
+        font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 0, "opsz" 12;
+        @apply text-[30px] opacity-0 transition-opacity;
+    }
+    h2:hover > a:after {
+        @apply opacity-30;
+    }
+}
+
+@layer components {
+    .gp-global_width {
+        @apply max-w-7xl mx-auto px-4 sm:px-6 md:px-8;
+    }
+    .tag {
+        @apply inline-block p-[10px] dark:text-primary dark:bg-secondary/[0.4] text-secondary bg-primary/[0.4] rounded-xl text-xs hover:opacity-80 transition-opacity;
+    }
+
+    .underlineAnim {
+        @apply relative no-underline 
+            after:absolute 
+            after:left-0 
+            after:bottom-0 
+            after:h-px 
+            after:w-full 
+            after:origin-right 
+            after:scale-x-0 
+            after:dark:bg-current 
+            after:bg-current
+            after:transition-transform 
+            after:duration-500 
+            after:content-[""] 
+            hover:after:origin-left 
+            hover:after:scale-x-100 
+            hover:after:duration-300
+            group-hover:after:origin-left 
+            group-hover:after:scale-x-100 
+            group-hover:after:duration-300;
+    }
+    .material-symbols-outlined {
+        font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 0, "opsz" 12;
+    }
+}
