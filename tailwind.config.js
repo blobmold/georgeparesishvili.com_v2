@@ -9,6 +9,11 @@ module.exports = {
             },
             fontFamily: {
                 ubuntu: ["Ubuntu", "sans-serif"],
+                lora: ["Lora", "serif"],
+            },
+            fontSize: {
+                8: "2rem",
+                10: "2.5rem",
             },
         },
     },

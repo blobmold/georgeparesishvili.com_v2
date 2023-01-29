@@ -8,13 +8,13 @@ const ProjectsSection = (): JSX.Element => {
     if (projects.length === 0) return <></>;
 
     return (<>
-        <section className="gp-global_width">
-            <h2 className={"my-12"} id="projects">
+        <section className="gp-global_width space-y-8">
+            <h2 id="projects">
                 <a href="#projects">
                     {title}
                 </a>
             </h2>
-            <ul className={"space-y-8"}>
+            <ul className={"space-y-32"}>
                 {
                     projects.map((project, i) => (
                         <li key={`project-${i}`}>

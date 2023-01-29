@@ -4,16 +4,16 @@
 
 @layer base {
     body {
-        @apply font-ubuntu;
+        @apply font-ubuntu font-light
     }
+    /* h1, h2, h3, h4, h5, h6 {
+        @apply font-lora
+    } */
     h1 {
-        @apply text-5xl font-bold;
+        @apply text-8 md:text-5xl font-bold;
     }
     h2 {
-        @apply text-[40px] font-bold inline-block;
-    }
-    h3 {
-        @apply text-3xl font-medium;
+        @apply text-2xl md:text-3xl md:text-10 font-bold inline-block;
     }
     h2 > a {
         @apply flex items-center;
@@ -27,6 +27,12 @@
     h2:hover > a:after {
         @apply opacity-30;
     }
+    h3 {
+        @apply text-xl md:text-2xl font-medium;
+    }
+    h4 {
+        @apply text-lg font-medium
+    }
 }
 
 @layer components {
@@ -34,7 +40,7 @@
         @apply max-w-7xl mx-auto px-4 sm:px-6 md:px-8;
     }
     .tag {
-        @apply inline-block p-[10px] dark:text-primary dark:bg-secondary/[0.4] text-secondary bg-primary/[0.4] rounded-xl text-xs hover:opacity-80 transition-opacity;
+        @apply inline-block px-2 py-1  dark:text-primary dark:bg-secondary/[0.4] text-secondary bg-primary/[0.4] rounded-lg text-xs hover:opacity-80 transition-opacity;
     }
 
     .underlineAnim {

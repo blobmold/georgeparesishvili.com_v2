@@ -15,7 +15,7 @@ const projectsData = {
         {
             title: "Around the Sun v1 - Rooms Hotels",
             technologies: ["Node.js", "Express.js", "EJS", "TailwindCSS", "JavaScript", "GSAP"],
-            input: "Development",
+            input: "Developed ",
             links: [
                 {
                     label: "website",
@@ -37,12 +37,12 @@ const projectsData = {
         {
             title: "Portfolio Site v2",
             technologies: ["Next.js", "React", "TypeScript", "TailwindCSS"],
-            input: "Design and Development"
+            input: "Designed and developed my second online resume"
         },
         {
             title: "Portfolio Site v1",
             technologies: ["JavaScript", "HTML5", "CSS3"],
-            input: "Design and Development",
+            input: "Designed and developed my first online resume.",
             links: [
                 {
                     label: "website",
