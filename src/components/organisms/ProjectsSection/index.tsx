@@ -14,7 +14,7 @@ const ProjectsSection = (): JSX.Element => {
                     {title}
                 </a>
             </h2>
-            <ul className={"space-y-32"}>
+            <ul className={"space-y-4"}>
                 {
                     projects.map((project, i) => (
                         <li key={`project-${i}`}>
