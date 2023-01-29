@@ -8,7 +8,7 @@ const ProjectsSection = (): JSX.Element => {
     if (projects.length === 0) return <></>;
 
     return (<>
-        <section className="gp-global_width space-y-8">
+        <section className="gp-global_width space-y-8 mt-8">
             <h2 id="projects">
                 <a href="#projects">
                     {title}

@@ -39,10 +39,6 @@
     .gp-global_width {
         @apply max-w-7xl mx-auto px-4 sm:px-6 md:px-8;
     }
-    .tag {
-        @apply inline-block px-2 py-1  dark:text-primary dark:bg-secondary/[0.4] text-secondary bg-primary/[0.4] rounded-lg text-xs hover:opacity-80 transition-opacity;
-    }
-
     .underlineAnim {
         @apply relative no-underline 
             after:absolute 
