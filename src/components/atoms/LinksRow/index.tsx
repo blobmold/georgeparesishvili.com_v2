@@ -24,7 +24,7 @@ const LinksRow = ({ links }: LinksRowProps): JSX.Element => {
                                 key={index}
                                 href={link.url}
                                 target={"_blank"}
-                                className="group flex text-sm capitalize text-primary/70 dark:text-secondary/70 space-x-1"
+                                className="group inline-flex text-sm capitalize text-primary/70 dark:text-secondary/70 space-x-1"
                             >
                                 <span className="underlineAnim">{link.label}</span>
                                 <Icon.OpenInNew width={10} height={10} className={"fill-primary/70 dark:fill-secondary/70"} />
