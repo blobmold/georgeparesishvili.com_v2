@@ -6,4 +6,5 @@ export interface Data {
         label: string;
         url: string;
     }[];
-}[]
+}
+[];

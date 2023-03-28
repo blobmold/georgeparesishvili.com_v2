@@ -8,9 +8,9 @@ const projectsData = {
             links: [
                 {
                     label: "website",
-                    url: "https://around.roomshotels.com"
-                }
-            ]
+                    url: "https://around.roomshotels.com",
+                },
+            ],
         },
         {
             title: "Around the Sun v1 - Rooms Hotels",
@@ -19,9 +19,9 @@ const projectsData = {
             links: [
                 {
                     label: "website",
-                    url: "https://around.roomshotels.com"
-                }
-            ]
+                    url: "https://around.roomshotels.com",
+                },
+            ],
         },
         {
             title: "Rooms Hotels",
@@ -30,14 +30,14 @@ const projectsData = {
             links: [
                 {
                     label: "website",
-                    url: "https://roomshotels.com"
-                }
-            ]
+                    url: "https://roomshotels.com",
+                },
+            ],
         },
         {
             title: "Portfolio Site v2",
             technologies: ["Next.js", "React", "TypeScript", "TailwindCSS"],
-            input: "Designed and developed my second online resume"
+            input: "Designed and developed my second online resume",
         },
         {
             title: "Portfolio Site v1",
@@ -46,12 +46,11 @@ const projectsData = {
             links: [
                 {
                     label: "website",
-                    url: "https://macron125.github.io"
-                }
-            ]
+                    url: "https://macron125.github.io",
+                },
+            ],
         },
-    ]
-}
+    ],
+};
 
-export default projectsData
-
+export default projectsData;

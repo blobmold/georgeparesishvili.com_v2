@@ -3,17 +3,17 @@ const contactData = {
     social: [
         {
             networkTitle: "Linkedin",
-            url: "https://www.linkedin.com/in/ifyoureadthisyouareawesome/"
+            url: "https://www.linkedin.com/in/ifyoureadthisyouareawesome/",
         },
         {
             networkTitle: "github",
-            url: "https://github.com/macron125"
+            url: "https://github.com/macron125",
         },
         {
             networkTitle: "twitter",
-            url: "https://twitter.com/GParesishvili"
-        }
-    ]
-}
+            url: "https://twitter.com/GParesishvili",
+        },
+    ],
+};
 
 export default contactData;

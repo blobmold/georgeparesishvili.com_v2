@@ -1,20 +1,21 @@
-import type { Data } from "../../../types"
+import type { Data } from "../../../types";
 
 type InputRowProps = {
-    input?: Data["input"]
-}
+    input?: Data["input"];
+};
 
 const InputRow = ({ input }: InputRowProps): JSX.Element => {
-
-    if (!input || input.length === 0) return <></>
+    if (!input || input.length === 0) return <></>;
 
     return (
-        <div className={"space-y-1 max-w-screen-md"}>
+        <div className="max-w-screen-md space-y-1">
             {/* <h4 className={"dark:text-secondary/50 text-primary/50"}>Input</h4> */}
-            <h4 className={"tracking-[0.3em] text-sm uppercase"}>Input</h4>
-            <p className={"md:col-span-3 text-sm md:text-base dark:text-secondary/70 text-primary/70"}>{input}</p>
+            <h4 className="text-sm uppercase tracking-[0.3em]">Input</h4>
+            <p className="text-sm text-primary/70 dark:text-secondary/70 md:col-span-3 md:text-base">
+                {input}
+            </p>
         </div>
-    )
-}
+    );
+};
 
-export default InputRow
+export default InputRow;

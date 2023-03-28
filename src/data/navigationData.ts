@@ -1,16 +1,16 @@
 const navigationData = [
     {
         label: "Home",
-        route: "/"
+        route: "/",
     },
     {
         label: "Projects",
-        route: "#projects"
+        route: "#projects",
     },
     {
         label: "Contact",
-        route: "#contact"
-    }
-]
+        route: "#contact",
+    },
+];
 
-export default navigationData
+export default navigationData;
