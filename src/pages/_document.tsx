@@ -3,7 +3,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
     return (
-        <Html className="dark">
+        <Html className="dark" lang="en-gb">
             <Head>
                 <meta name="theme-color" content="#0E0E10" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
