@@ -1,16 +1,17 @@
 import type { NextPage } from "next";
+import Head from "next/head";
 import Link from "next/link";
+
 import ProjectsSection from "../components/organisms/ProjectsSection";
 
 const Home: NextPage = () => {
     return (
         <>
+        <Head>
+            <title>Personal Website - George Paresishvili</title>
+        </Head>
             <main>
-                <section
-                    className={
-                        "flex min-h-[90vh] flex-col justify-center bg-primary text-secondary"
-                    }
-                >
+                <section className="flex min-h-[90vh] flex-col justify-center bg-primary text-secondary">
                     <div className="gp-global_width w-full space-y-2">
                         <h1>
                             <Link href={"/"}>George Paresishvili</Link>
@@ -21,7 +22,6 @@ const Home: NextPage = () => {
                         </div>
                     </div>
                 </section>
-
                 <ProjectsSection />
             </main>
         </>
