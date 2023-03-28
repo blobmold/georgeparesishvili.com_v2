@@ -20,6 +20,15 @@ module.exports = {
             },
             transitionTimingFunction: {
                 easeOutExpo: "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            animation: {
+                current: 'current 7s ease-in-out infinite'
+            },
+            keyframes: {
+                current: {
+                    from: { offsetDistance: "0%"},
+                    to: { offsetDistance: "100%"}
+                }
             }
         },
     },
