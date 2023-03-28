@@ -1,5 +1,8 @@
 import Link from "next/link";
+
 import type { Data } from "../../../types";
+
+import Icon from "../Icons";
 
 type LinksRowProps = {
     links?: Data["links"];
@@ -21,12 +24,10 @@ const LinksRow = ({ links }: LinksRowProps): JSX.Element => {
                                 key={index}
                                 href={link.url}
                                 target={"_blank"}
-                                className="group inline-block text-sm capitalize text-primary/70 dark:text-secondary/70 md:text-base"
+                                className="group flex text-sm capitalize text-primary/70 dark:text-secondary/70 space-x-1"
                             >
                                 <span className="underlineAnim">{link.label}</span>
-                                <span className="material-symbols-outlined text-base">
-                                    open_in_new
-                                </span>
+                                <Icon.OpenInNew width={10} height={10} className={"fill-primary/70 dark:fill-secondary/70"} />
                             </Link>
                         )
                 )}
