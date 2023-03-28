@@ -1,14 +1,12 @@
 import Navigation from "../../molecules/Navigation";
 
-function Header(): JSX.Element {
+const Header: React.FC = () => {
     return (
-        <>
-            <header
-                className="fixed bottom-5 z-50 flex w-full justify-center md:top-5 md:bottom-auto"
-            >
-                <Navigation />
-            </header>
-        </>
+        <header
+            className="fixed bottom-5 z-50 flex w-full justify-center md:top-5 md:bottom-auto"
+        >
+            <Navigation />
+        </header>
     );
 }
 

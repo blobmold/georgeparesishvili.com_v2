@@ -1,7 +1,7 @@
 import Link from "next/link";
 import navigationData from "../../../data/navigationData";
 
-const Navigation = (): JSX.Element => {
+const Navigation: React.FC = () => {
     if (navigationData.length === 0) return <></>;
 
     // hover:bg-secondary hover:text-primary
@@ -16,7 +16,7 @@ const Navigation = (): JSX.Element => {
                         <li key={`nav-${i}`}>
                             <Link
                                 href={data.route}
-                                className="group relative block rounded-sm p-4 text-sm transition-colors hover:bg-secondary hover:text-primary"
+                                className="group relative block rounded-sm p-4 text-sm transition-colors ease-easeOutExpo hover:bg-secondary hover:text-primary"
                             >
                                 {/* <span className="w-full h-full scale-0 transition-transform group-hover:scale-100 duration-500 group-hover:bg-secondary absolute inset-0 -z-10 origin-left"></span> */}
                                 {data.label}

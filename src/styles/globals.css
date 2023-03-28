@@ -13,7 +13,7 @@
         @apply text-8 font-bold md:text-5xl;
     }
     h2 {
-        @apply inline-block text-xl font-bold md:text-3xl md:text-10;
+        @apply inline-block font-bold text-3xl;
     }
     h2 > a {
         @apply flex items-center;
